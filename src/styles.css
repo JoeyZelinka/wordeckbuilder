@@ -1,0 +1,48 @@
+body {
+    background-image: url('./images/Mascot Pictue Mock-up-Recovered.jpg');
+    display: flex;
+    justify-content: center;
+    
+    
+    
+    
+    
+
+}
+
+
+h3 {
+    color: rgb(241, 226, 4);
+    font-family: fantasy ;
+    padding-top: 20px;
+}
+
+
+
+
+.preview {
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.DeckList {
+    color:chartreuse;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+.DeckBuilderNav {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.me-auto {
+    display: flex;
+    justify-content: space-between;
+}
+
+

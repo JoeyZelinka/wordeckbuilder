@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.realms {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+.container-fluid {
+    padding-top: 10px;
+}
+
+.mtghome {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 50px;
+    
+}
