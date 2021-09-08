@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap'; 
-import '/Users/joeyz/Desktop/w3B d3V/Dc C0d3/DCProjects/wordeckbuilder/src/styles.css';
+import './wordeckbuilder/src/styles.css';
 
 const SearchBar = ({ setResults }) => {
   const [name, setName] = useState('');

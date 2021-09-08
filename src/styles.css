@@ -38,11 +38,35 @@ h3 {
     display:flex;
     flex-direction: row;
     
+    color: rgb(241, 226, 4);
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 50px;
+    
+    
 }
 
-.me-auto {
-    display: flex;
-    justify-content: space-between;
+.fabdeckbuilder {
+    color:red;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 50px;
 }
+
+.pokemondeckbuilder {
+    color:green;
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: 50px;
+}
+/* 
+.MasterNav {
+    display: flex;
+   justify-content: center; 
+} */
+
+
+
+
 
 

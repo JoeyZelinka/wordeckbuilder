@@ -11,13 +11,16 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import MTGDeckBuilder from './components/MTGDeckBuilder';
 import FABDeckBuilder from './components/FABDeckbuilder';
 import PokemonDeckBuilder from './components/PokemonDeckBuilder';
-
+import WarhammerCompanion from './components/WarhammerCompanion';
+import RPGStatRoller from './components/RPGStatRoller';
+import store from "./redux/store";
+import { Provider } from "react-redux";
 
 
 const App = () => {
 
   return (
-
+<Provider store={store}>
 <Router>
     <div id="app">
       <NavBar/>
@@ -35,11 +38,19 @@ const App = () => {
           <PokemonDeckBuilder/>
         </Route>
 
+        <Route path ="/WarhammerCompanion">
+          <WarhammerCompanion/>
+        </Route>
+        <Route path ="/RPGStatRoller">
+          <RPGStatRoller/>
+        </Route>
+
       </Switch>
 
       
     </div>
     </Router>
+    </Provider>
   );
 }
 

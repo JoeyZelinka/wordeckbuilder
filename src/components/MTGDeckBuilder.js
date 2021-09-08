@@ -5,13 +5,16 @@ import {
   SearchResults
 } from '.';
 import { Container, Col, Row } from 'react-bootstrap';
+import { useDispatch } from 'react-redux';
+import { actionAddToDeck, actionRemoveToDeck } from '../redux/actions/Deck'
 
 
 
 
 const MTGDeckBuilder = () => {
+  const dispatch = useDispatch()
   const [results, setResults] = useState([]);
-  const [deck, setDeck] = useState([]);
+  const [deck] = useState([]);
 
 
 
@@ -28,8 +31,10 @@ const MTGDeckBuilder = () => {
         count: 1
       });
     }
+    console.log(nextDeck)
+    dispatch(actionAddToDeck(nextDeck))
 
-    setDeck(nextDeck);
+    // setDeck(nextDeck);
 
 
 
@@ -37,16 +42,21 @@ const MTGDeckBuilder = () => {
   }
 
   const removeCardFromDeck = ({ id }) => {
+    console.log(id)
     const nextDeck = [...deck];
     const index = nextDeck.findIndex(card => card.id === id);
 
-    if (index === -1) {
+    if (index !== -1) {
       nextDeck.splice(index, 1);
-    } else {
-      nextDeck[index].count -= 1;
-    }
-
-    setDeck(nextDeck);
+      
+    } 
+    // if (index === -1) {
+    //   nextDeck.splice(index, 1);
+    // } else {
+    //   nextDeck[index].count -= 1;
+    // }
+dispatch(actionRemoveToDeck(nextDeck))
+    // setDeck(nextDeck);
 
   }
 
@@ -66,9 +76,10 @@ const MTGDeckBuilder = () => {
             />
           </Col>
           <Col>
-            <DeckList deck={deck}
-              addCardToDeck={AddCardToDeck}
-              removeCardFromDeck={removeCardFromDeck} />
+            <DeckList
+            addCardToDeck={AddCardToDeck}
+            removeCardFromDeck={removeCardFromDeck}
+             />
           </Col>
         </Row>
 
@@ -81,3 +92,5 @@ const MTGDeckBuilder = () => {
 
 
 export default MTGDeckBuilder;
+
+

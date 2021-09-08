@@ -10,7 +10,7 @@ const SearchResults = ({
 }) => {
   const [newResults, setNewResults] = useState([])
 useEffect ( () => {
-  
+
   const filteredResults = results.filter(result => result.imageUrl)
   setNewResults(filteredResults)
  

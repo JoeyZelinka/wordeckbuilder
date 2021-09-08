@@ -10,6 +10,7 @@ const Card = ({
     addCardToDeck,
     removeCardFromDeck
   }) => {
+    
     return (
       <div className="Card">
         <img className="preview" src={ imageUrl } alt="" />
