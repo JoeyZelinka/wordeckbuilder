@@ -1,8 +1,8 @@
 import React from 'react'
 import { Container, Nav, Navbar, NavDropdown, Button, Form, } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import '/Users/joeyz/Desktop/w3B d3V/Dc C0d3/DCProjects/wordeckbuilder/src/styles.css';
-import tinyLogo from '/Users/joeyz/Desktop/w3B d3V/Dc C0d3/DCProjects/wordeckbuilder/src/images/pngtiny.png'
+import '../styles.css';
+import tinyLogo from '../images/pngtiny.png'
 function NavBar() {
 
   return (
