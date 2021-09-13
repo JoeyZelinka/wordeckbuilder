@@ -47,7 +47,7 @@ function NavBar() {
           <img src={tinyLogo} alt='TinyLogo' /> Tools:
           <Link to='/MTGDeckBuilder' >
             <Button variant="secondary">
-              MtG Deck Builder
+              MtG Deckbuilder
             </Button>
           </Link>
         </Container>
@@ -68,7 +68,7 @@ function NavBar() {
             </Button>
           </Link>
         </Container>
-        {/* <Container>
+        <Container>
           <Link to='/WarhammerCompanion'>
             <Button variant="secondary">
               Warhammer Companion
@@ -81,7 +81,7 @@ function NavBar() {
               RPG Stat Roller
             </Button>
           </Link>
-        </Container> */}
+        </Container>
         
    
       </Container>

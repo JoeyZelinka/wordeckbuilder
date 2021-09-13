@@ -105,6 +105,7 @@ const SearchBar = ({ setResults }) => {
           value={rarity}
           onChange={handleRarityChange} />
         <Button variant="info" type="submit">Search</Button>
+        <Button variant="success" type="reset">Clear All Fields</Button>
       </form>
     </div>
   );
