@@ -61,14 +61,14 @@ function NavBar() {
         </Container>
         
 
-        {/* <Container>
+        <Container>
           <Link to='/FABDeckBuilder'>
             <Button variant="secondary">
               Flesh & Blood Deck Builder
             </Button>
           </Link>
         </Container>
-        <Container>
+        {/* <Container>
           <Link to='/WarhammerCompanion'>
             <Button variant="secondary">
               Warhammer Companion
