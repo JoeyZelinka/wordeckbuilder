@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Nav, Navbar, NavDropdown, Button, Form, } from 'react-bootstrap'
+import { Container, Nav, Navbar, NavDropdown, Button, Dropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import '../styles.css';
 import tinyLogo from '../images/pngtiny.png'
@@ -9,7 +9,7 @@ function NavBar() {
 
     <div className="Nav">
 
-      <Navbar bg="dark" variant="dark">
+      {/* <Navbar bg="dark" variant="dark">
         <Container fluid="md" className="MasterNav">
           <Nav>
             
@@ -24,29 +24,16 @@ function NavBar() {
                 <NavDropdown.Item href="#action/3.4">Pokemon</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.5">Flesh and Blood</NavDropdown.Item>
               </NavDropdown>
-
-  
-            
-              <Form.Group className="mb-3" controlId="search">
-            
-                <Form.Control type="search" placeholder="Search" />
-          
-              </Form.Group>
-              <Button variant="secondary" type="submit">Submit</Button>
-              
-            
-          </Nav>
-        </Container>
-      </Navbar>
-          
-      <br />
-
-      <Container className="DeckBuilderNav">
-       
-        <Container>
+               */}
+      <Container className="WoRtools">
+      <Dropdown>
+  <Dropdown.Toggle variant="success" id="dropdown-basic">
           <img src={tinyLogo} alt='TinyLogo' /> Tools:
+  </Dropdown.Toggle>
+  <Dropdown.Menu>
+        <Container>
           <Link to='/MTGDeckBuilder' >
-            <Button variant="secondary">
+            <Button variant="link">
               MtG Deckbuilder
             </Button>
           </Link>
@@ -54,7 +41,7 @@ function NavBar() {
        
         <Container>
           <Link to='/PokemonDeckBuilder'>
-            <Button variant="secondary">
+            <Button variant="link">
               Pokemon Deck Builder
             </Button>
           </Link>
@@ -63,28 +50,43 @@ function NavBar() {
 
         <Container>
           <Link to='/FABDeckBuilder'>
-            <Button variant="secondary">
+            <Button variant="link">
               Flesh & Blood Deck Builder
             </Button>
           </Link>
         </Container>
-        {/* <Container>
+        <Container>
           <Link to='/WarhammerCompanion'>
-            <Button variant="secondary">
+            <Button variant="link">
               Warhammer Companion
             </Button>
           </Link>
         </Container>
         <Container>
           <Link to='/RPGStatRoller'>
-            <Button variant="secondary">
-              RPG Stat Roller
+            <Button variant="link">
+              RPG CharactSTER
             </Button>
           </Link>
-        </Container> */}
-        
-   
+        </Container>
+        </Dropdown.Menu>
+</Dropdown>
       </Container>
+
+  
+            
+              
+            
+                
+              
+            
+          {/* </Nav>
+        </Container>
+      </Navbar> */}
+          
+      <br />
+
+   
     </div>
 
   );

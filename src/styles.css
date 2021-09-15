@@ -2,6 +2,7 @@ body {
     background-image: url('./images/Mascot Pictue Mock-up-Recovered.jpg');
     display: flex;
     justify-content: center;
+
     
     
     
@@ -27,17 +28,17 @@ h3 {
 }
 
 .DeckList {
-    color:chartreuse;
+    color:whitesmoke;
     font-family: fantasy;
     font-weight: bold;
     font-size: large;
 
 }
 
-.DeckBuilderNav {
+.WoRtools {
     display:flex;
     flex-direction: row;
-    
+    padding-top: 20px;
     color: rgb(241, 226, 4);
     font-family: fantasy;
     font-weight: bold;
@@ -64,6 +65,7 @@ h3 {
     display: flex;
    justify-content: center; 
 } */
+
 
 
 
