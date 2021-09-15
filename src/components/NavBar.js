@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Nav, Navbar, NavDropdown, Button, Dropdown } from 'react-bootstrap'
+import { Container, Button, Dropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import '../styles.css';
 import tinyLogo from '../images/pngtiny.png'
