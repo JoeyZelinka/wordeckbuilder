@@ -56,7 +56,7 @@ const SearchBar = ({ setResults }) => {
   } 
 
   return (
-    <div id="search">
+    <div className="search">
       <h3>Card Search</h3>
       <form onSubmit={handleSubmit}>
         <input
@@ -104,8 +104,8 @@ const SearchBar = ({ setResults }) => {
           placeholder="Search by Rarity"
           value={rarity}
           onChange={handleRarityChange} />
-        <Button variant="info" type="submit">Search</Button>
-        <Button variant="success" type="reset">Clear All Fields</Button>
+        <Button variant="dark" type="submit">Search</Button>
+        <Button variant="light" type="reset">Clear All Fields</Button>
       </form>
     </div>
   );
